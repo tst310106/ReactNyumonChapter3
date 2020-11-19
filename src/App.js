@@ -11,7 +11,13 @@ let theme = {
     backgroundColor:"#006",
     color:"#eef",
     padding:"10px",
-  }
+  },
+  darkWithLargeFontSize:{
+    backgroundColor:"#006",
+    color:"#eef",
+    padding:"10px",
+    fontSize:"36pt",
+  },
 };
 
 // コンテキストオブジェクトを生成する。クラスの外側で宣言する。
@@ -55,7 +61,9 @@ class App extends Component {
           <Message value="この部分を他の人が変更し先にmergeした" />
         <ThemeContext.Provider value={theme.dark}>
           <Title value="次のコンポーネント：Content page2" />
-          <Message value="この部分の表示文章を変更しました！！！" />
+          <ThemeContext.Provider value={theme.darkWithLargeFontSize}>
+            <Message value="この部分の表示文章を変更しました！！！" />
+          </ThemeContext.Provider>
         </ThemeContext.Provider>
         
       </div>
