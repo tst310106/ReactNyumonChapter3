@@ -52,7 +52,7 @@ class App extends Component {
 
       <div style={this.context}>
           <Title value="最初のコンポーネント：Content page" />
-          <Message value="最初のコンポーネント：This is Content sample." />
+          <Message value="この部分を他の人が変更し先にmergeした" />
         <ThemeContext.Provider value={theme.dark}>
           <Title value="次のコンポーネント：Content page2" />
           <Message value="この部分の表示文章を変更しました！！！" />
