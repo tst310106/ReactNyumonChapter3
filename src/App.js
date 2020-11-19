@@ -55,7 +55,7 @@ class App extends Component {
           <Message value="最初のコンポーネント：This is Content sample." />
         <ThemeContext.Provider value={theme.dark}>
           <Title value="次のコンポーネント：Content page2" />
-          <Message value="この部分の表示文章を変更しました。" />
+          <Message value="この部分の表示文章を変更しました！！！" />
         </ThemeContext.Provider>
         
       </div>
