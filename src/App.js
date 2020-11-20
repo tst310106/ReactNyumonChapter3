@@ -62,7 +62,7 @@ class App extends Component {
         <ThemeContext.Provider value={theme.dark}>
           <Title value="次のコンポーネント：Content page2" />
           <ThemeContext.Provider value={theme.darkWithLargeFontSize}>
-            <Message value="この部分の表示文章を変更しました！！！" />
+            <Message value="このをFolder_AではAに変更しました！" />
           </ThemeContext.Provider>
         </ThemeContext.Provider>
         
